@@ -13,6 +13,8 @@ php artisan migrate
 - Вставка [шаблона](https://getbootstrap.com/docs/4.1/examples/blog/)
 - Разбивка шаблона на части (footer, master, nav, slidebar)
 
+## Установка Orchid
+Установка Orchid доступна по ссылке [https://orchid.software/ru/docs/installation/](https://orchid.software/ru/docs/installation/)
 ## License
 
 MIT
