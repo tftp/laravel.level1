@@ -33,7 +33,7 @@ class ClientListScreen extends Screen
     public function query(): array
     {
         return [
-            'clients' => Client::paginate(10),
+            'clients' => Client::filters()->defaultSort('status', 'desc')->paginate(10),
         ];
     }
 
@@ -57,10 +57,10 @@ class ClientListScreen extends Screen
     {
         return [
             Layout::table('clients', [
-                TD::make('phone', 'Телефон')->width('150px')->cantHide()->canSee($this->isWorkTime()),
+                TD::make('phone', 'Телефон')->width('150px')->cantHide()->canSee($this->isWorkTime())->filter(TD::FILTER_TEXT),
                 TD::make('status', 'Статус')->render(function (Client $client) {
                     return $client->status === 'interviewed' ? 'Опрошен' : 'Не опрошен';
-                })->width('150px')->popover('Статус по результатам работы оператора'),
+                })->width('150px')->popover('Статус по результатам работы оператора')->sort(),
                 TD::make('email', 'Email'),
                 TD::make('assessment', 'Оценка')->width('200px')->align(TD::ALIGN_RIGHT),
                 TD::make('created_at', 'Дата создания')->defaultHidden(),
