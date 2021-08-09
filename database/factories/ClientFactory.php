@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Client;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Propaganistas\LaravelPhone\PhoneNumber;
 
 class ClientFactory extends Factory
 {
@@ -21,11 +22,10 @@ class ClientFactory extends Factory
      */
     public function definition()
     {
-        $faker = \Faker\Factory::create();
         return [
             'name' => $this->faker->name(),
             'last_name' => $this->faker->lastName(),
-            'phone' => $faker->PhoneNumber(),
+            'phone' => str_replace('+', '', PhoneNumber::make('9' . $this->faker->randomNumber(3, true) . $this->faker->randomNumber(3, true) . $this->faker->randomNumber(3, true), 'RU')),
             'service_id' => 1,
         ];
     }
