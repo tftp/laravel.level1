@@ -27,6 +27,8 @@ class ClientListScreen extends Screen
      */
     public $description = 'Список клиентов';
 
+    public $permission = 'platform.clients';
+
     /**
      * Query data.
      *
