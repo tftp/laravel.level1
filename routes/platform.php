@@ -34,7 +34,18 @@ Route::screen('/main', PlatformScreen::class)
     ->name('platform.main');
 
 //Clients
-Route::screen('clients', \App\Orchid\Screens\Client\ClientListScreen::class)->name('platform.clients');
+Route::screen('clients', \App\Orchid\Screens\Client\ClientListScreen::class)
+    ->name('platform.clients')->breadcrumbs(function (Trail $trail) {
+        return $trail
+            ->parent('platform.index')
+            ->push('Клиенты');
+    });
+
+// тоже самое с использованием стрелочной функции
+//Route::screen('clients', \App\Orchid\Screens\Client\ClientListScreen::class)
+//    ->name('platform.clients')->breadcrumbs(
+//          fn (Trail $trail) => $trail->parent('platform.index')->push('Клиенты')
+//    );
 
 // Platform > Profile
 Route::screen('profile', UserProfileScreen::class)
