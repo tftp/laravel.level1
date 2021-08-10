@@ -24,12 +24,13 @@ class ClientRequest extends FormRequest
     public function rules()
     {
         return [
-            'phone' => ['required', 'phone:RU'],
-            'name' => ['required'],
-            'last_name' => ['required'],
-            'email' => ['email', 'required'],
-            'birthday' => ['required', 'date_format:Y-m-d'],
-            'service_id' => ['exists:services,id', 'required'],
+            'client.phone' => ['sometimes', 'required', 'phone:RU'],
+            'client.name' => ['required'],
+            'client.last_name' => ['required'],
+            'client.email' => ['email', 'required'],
+            'client.birthday' => ['required', 'date_format:Y-m-d'],
+            'client.service_id' => ['exists:services,id', 'required'],
+            'client.assessment' => ['required'],
         ];
     }
 
@@ -37,7 +38,7 @@ class ClientRequest extends FormRequest
     public function messages(): array
     {
         return [
-            'phone.phone' => 'Номер телефона в неверном формате'
+            'client.phone.phone' => 'Номер телефона в неверном формате'
         ];
     }
 }

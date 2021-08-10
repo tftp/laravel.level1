@@ -40,7 +40,7 @@ class ClientListTable extends Table
             TD::make('action')->render(function (Client $client) {
                 return ModalToggle::make('Редактировать')
                     ->modal('editClient')
-                    ->method('update')
+                    ->method('createOrUpdate')
                     ->modalTitle('Редактирование клиента' . $client->phone)
                     ->asyncParameters([
                         'client' => $client->id,
