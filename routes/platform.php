@@ -47,6 +47,13 @@ Route::screen('clients', \App\Orchid\Screens\Client\ClientListScreen::class)
 //          fn (Trail $trail) => $trail->parent('platform.index')->push('Клиенты')
 //    );
 
+// Analitics and Reports
+Route::screen('analytics-and-reports', \App\Orchid\Screens\AnalyticsAndReportsScreen::class)
+    ->name('platform.analyticsAndReports')->breadcrumbs(
+          fn (Trail $trail) => $trail->parent('platform.index')->push('Аналитика и отчеты')
+    );
+
+
 // Platform > Profile
 Route::screen('profile', UserProfileScreen::class)
     ->name('platform.profile')

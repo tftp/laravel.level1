@@ -5,12 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Orchid\Filters\Filterable;
+use Orchid\Metrics\Chartable;
 use Orchid\Screen\AsSource;
 use Propaganistas\LaravelPhone\PhoneNumber;
 
 class Client extends Model
 {
     use HasFactory;
+    use Chartable;
     use AsSource;
     use Filterable; // расширит модель дополнительными методами
 
