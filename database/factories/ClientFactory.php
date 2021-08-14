@@ -26,7 +26,7 @@ class ClientFactory extends Factory
             'name' => $this->faker->name(),
             'last_name' => $this->faker->lastName(),
             'phone' => str_replace('+', '', PhoneNumber::make('9' . $this->faker->randomNumber(3, true) . $this->faker->randomNumber(3, true) . $this->faker->randomNumber(3, true), 'RU')),
-            'service_id' => 1,
+            'service_id' => random_int(1, 3),
         ];
     }
 }

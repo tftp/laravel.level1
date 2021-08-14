@@ -26,8 +26,18 @@ class Client extends Model
         'phone',
     ];
 
+    public const STATUS = [
+        'interviewed' => 'Опрошен',
+        'not_interviewed' => 'Не опрошен',
+    ];
+
     public function setPhoneAttribute($phone)
     {
-        $this->attributes['phone'] = str_replace('+', '', PhoneNumber::make($phone, 'RU')->formatE164());
+        $this->attributes['phone'] = make_phone_normalized($phone);
+    }
+
+    public function service()
+    {
+        return $this->belongsTo(Service::class);
     }
 }

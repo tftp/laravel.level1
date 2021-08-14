@@ -14,8 +14,10 @@ class ServiceSeeder extends Seeder
      */
     public function run()
     {
-        Service::create([
-            'name' => 'Услуга 1',
-        ]);
+        Service::upsert([
+            ['name' => 'Шиномонтаж'],
+            ['name' => 'Техосмотр'],
+            ['name' => 'Балансировка'],
+        ], ['name']);
     }
 }
