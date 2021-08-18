@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7759431e303e2d722a264a8a991a9e84",
+    "content-hash": "e29400537262de9d71648c92cffd941f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -633,6 +633,132 @@
             "time": "2021-04-26T11:24:25+00:00"
         },
         {
+            "name": "giggsey/libphonenumber-for-php",
+            "version": "8.12.29",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/libphonenumber-for-php.git",
+                "reference": "407bbbb6c857aeab010ce7b40e84a938f8b43003"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/407bbbb6c857aeab010ce7b40e84a938f8b43003",
+                "reference": "407bbbb6c857aeab010ce7b40e84a938f8b43003",
+                "shasum": ""
+            },
+            "require": {
+                "giggsey/locale": "^1.7",
+                "php": ">=5.3.2",
+                "symfony/polyfill-mbstring": "^1.17"
+            },
+            "require-dev": {
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "^0.5",
+                "phing/phing": "^2.7",
+                "php-coveralls/php-coveralls": "^1.0|^2.0",
+                "symfony/console": "^2.8|^3.0|^v4.4|^v5.2",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "libphonenumber\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/src/data/",
+                    "/src/carrier/data/",
+                    "/src/geocoding/data/",
+                    "/src/timezone/data/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "https://giggsey.com/"
+                }
+            ],
+            "description": "PHP Port of Google's libphonenumber",
+            "homepage": "https://github.com/giggsey/libphonenumber-for-php",
+            "keywords": [
+                "geocoding",
+                "geolocation",
+                "libphonenumber",
+                "mobile",
+                "phonenumber",
+                "validation"
+            ],
+            "support": {
+                "irc": "irc://irc.appliedirc.com/lobby",
+                "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
+                "source": "https://github.com/giggsey/libphonenumber-for-php"
+            },
+            "time": "2021-08-06T13:37:53+00:00"
+        },
+        {
+            "name": "giggsey/locale",
+            "version": "1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/Locale.git",
+                "reference": "b07f1eace8072ccc61445ad8fbd493ff9d783043"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/Locale/zipball/b07f1eace8072ccc61445ad8fbd493ff9d783043",
+                "reference": "b07f1eace8072ccc61445ad8fbd493ff9d783043",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "^0.5",
+                "phing/phing": "~2.7",
+                "php-coveralls/php-coveralls": "^1.0|^2.0",
+                "phpunit/phpunit": "^4.8|^5.0",
+                "symfony/console": "^2.8|^3.0|^4.0",
+                "symfony/filesystem": "^2.8|^3.0|^4.0",
+                "symfony/finder": "^2.8|^3.0|^4.0",
+                "symfony/process": "^2.8|^3.0|^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Giggsey\\Locale\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "http://giggsey.com/"
+                }
+            ],
+            "description": "Locale functions required by libphonenumber-for-php",
+            "support": {
+                "issues": "https://github.com/giggsey/Locale/issues",
+                "source": "https://github.com/giggsey/Locale/tree/master"
+            },
+            "time": "2020-07-07T11:16:24+00:00"
+        },
+        {
             "name": "graham-campbell/result-type",
             "version": "v1.0.1",
             "source": {
@@ -1105,6 +1231,78 @@
             "time": "2021-08-03T14:36:33+00:00"
         },
         {
+            "name": "laravel/scout",
+            "version": "v9.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/scout.git",
+                "reference": "d3703c03dd07cbb6068a002bc35a97e2ce9c3066"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/scout/zipball/d3703c03dd07cbb6068a002bc35a97e2ce9c3066",
+                "reference": "d3703c03dd07cbb6068a002bc35a97e2ce9c3066",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/bus": "^8.0",
+                "illuminate/contracts": "^8.0",
+                "illuminate/database": "^8.0",
+                "illuminate/http": "^8.0",
+                "illuminate/pagination": "^8.0",
+                "illuminate/queue": "^8.0",
+                "illuminate/support": "^8.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "meilisearch/meilisearch-php": "^0.17",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^6.17",
+                "phpunit/phpunit": "^9.3"
+            },
+            "suggest": {
+                "algolia/algoliasearch-client-php": "Required to use the Algolia engine (^2.2).",
+                "meilisearch/meilisearch-php": "Required to use the MeiliSearch engine (^0.17)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "9.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Scout\\ScoutServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Scout\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel Scout provides a driver based solution to searching your Eloquent models.",
+            "keywords": [
+                "algolia",
+                "laravel",
+                "search"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/scout/issues",
+                "source": "https://github.com/laravel/scout"
+            },
+            "time": "2021-08-03T18:34:39+00:00"
+        },
+        {
             "name": "laravel/tinker",
             "version": "v2.6.1",
             "source": {
@@ -1460,6 +1658,63 @@
             "time": "2021-06-23T21:56:05+00:00"
         },
         {
+            "name": "league/iso3166",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/iso3166.git",
+                "reference": "9976d382f270ad3f3df8a68719beb7a7179ffa1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/iso3166/zipball/9976d382f270ad3f3df8a68719beb7a7179ffa1e",
+                "reference": "9976d382f270ad3f3df8a68719beb7a7179ffa1e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\ISO3166\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com"
+                }
+            ],
+            "description": "ISO 3166-1 PHP Library",
+            "homepage": "https://github.com/thephpleague/iso3166",
+            "keywords": [
+                "3166",
+                "3166-1",
+                "ISO 3166",
+                "countries",
+                "iso",
+                "library"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/iso3166/issues",
+                "source": "https://github.com/thephpleague/iso3166"
+            },
+            "time": "2020-12-05T06:50:42+00:00"
+        },
+        {
             "name": "league/mime-type-detection",
             "version": "1.7.0",
             "source": {
@@ -1610,6 +1865,66 @@
                 }
             ],
             "time": "2021-07-23T07:42:52+00:00"
+        },
+        {
+            "name": "myclabs/php-enum",
+            "version": "1.8.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/php-enum.git",
+                "reference": "b942d263c641ddb5190929ff840c68f78713e937"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/b942d263c641ddb5190929ff840c68f78713e937",
+                "reference": "b942d263c641ddb5190929ff840c68f78713e937",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "1.*",
+                "vimeo/psalm": "^4.6.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MyCLabs\\Enum\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP Enum contributors",
+                    "homepage": "https://github.com/myclabs/php-enum/graphs/contributors"
+                }
+            ],
+            "description": "PHP Enum implementation",
+            "homepage": "http://github.com/myclabs/php-enum",
+            "keywords": [
+                "enum"
+            ],
+            "support": {
+                "issues": "https://github.com/myclabs/php-enum/issues",
+                "source": "https://github.com/myclabs/php-enum/tree/1.8.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/mnapoli",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/myclabs/php-enum",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-05T08:18:36+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -1974,6 +2289,215 @@
             "time": "2021-04-09T13:42:10+00:00"
         },
         {
+            "name": "orchid/blade-icons",
+            "version": "1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchidsoftware/blade-icons.git",
+                "reference": "51abf9decad29e358a75a202c69c93ef88732d89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchidsoftware/blade-icons/zipball/51abf9decad29e358a75a202c69c93ef88732d89",
+                "reference": "51abf9decad29e358a75a202c69c93ef88732d89",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "laravel/framework": "^8.16"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Orchid\\Icons\\IconServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchid\\Icons\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "tabuna",
+                    "email": "bliz48rus@gmail.com"
+                }
+            ],
+            "description": "An easy way inline SVG images in your Blade templates.",
+            "support": {
+                "issues": "https://github.com/orchidsoftware/blade-icons/issues",
+                "source": "https://github.com/orchidsoftware/blade-icons/tree/1.3.2"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/tabuna/10usd",
+                    "type": "custom"
+                }
+            ],
+            "time": "2021-06-23T19:26:10+00:00"
+        },
+        {
+            "name": "orchid/icons",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchidsoftware/icons.git",
+                "reference": "86014fb48aaba9d64e040588cd394af3309bba06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchidsoftware/icons/zipball/86014fb48aaba9d64e040588cd394af3309bba06",
+                "reference": "86014fb48aaba9d64e040588cd394af3309bba06",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Orchid\\IconPack\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandr Chernyaev",
+                    "email": "bliz48rus@gmail.com"
+                },
+                {
+                    "name": "Dmitry Skirta"
+                },
+                {
+                    "name": "Jamal Jama"
+                },
+                {
+                    "name": "Ahmad Firoz"
+                }
+            ],
+            "description": "Simple and Minimal Line Icons",
+            "support": {
+                "issues": "https://github.com/orchidsoftware/icons/issues",
+                "source": "https://github.com/orchidsoftware/icons/tree/2.2.0"
+            },
+            "time": "2020-09-26T13:20:57+00:00"
+        },
+        {
+            "name": "orchid/platform",
+            "version": "10.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchidsoftware/platform.git",
+                "reference": "48520c89457e61325aa470149a628d6268c31bd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchidsoftware/platform/zipball/48520c89457e61325aa470149a628d6268c31bd1",
+                "reference": "48520c89457e61325aa470149a628d6268c31bd1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": "^8.46",
+                "laravel/scout": "^8.5|^9.0",
+                "myclabs/php-enum": "^1.7",
+                "orchid/blade-icons": "^1.2",
+                "orchid/icons": "^2.0",
+                "tabuna/breadcrumbs": "^2.3",
+                "watson/active": "^6.0"
+            },
+            "conflict": {
+                "laravel/framework": "<8.46.0"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^2.10",
+                "fakerphp/faker": "^1.9.1",
+                "guzzlehttp/guzzle": "~6.0",
+                "mockery/mockery": "~1.0",
+                "orchestra/testbench-core": "^6.2",
+                "orchestra/testbench-dusk": "^6.1",
+                "phpunit/php-code-coverage": "^9.0",
+                "phpunit/phpunit": "^9.0",
+                "sti3bas/laravel-scout-array-driver": "^2.2",
+                "vimeo/psalm": "^4.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Orchid\\Platform\\Providers\\FoundationServiceProvider"
+                    ],
+                    "aliases": {
+                        "Alert": "Orchid\\Support\\Facades\\Alert",
+                        "Dashboard": "Orchid\\Support\\Facades\\Dashboard"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchid\\Access\\": "src/Access/",
+                    "Orchid\\Alert\\": "src/Alert/",
+                    "Orchid\\Attachment\\": "src/Attachment/",
+                    "Orchid\\Filters\\": "src/Filters/",
+                    "Orchid\\Metrics\\": "src/Metrics/",
+                    "Orchid\\Platform\\": "src/Platform/",
+                    "Orchid\\Screen\\": "src/Screen/",
+                    "Orchid\\Support\\": "src/Support/"
+                },
+                "files": [
+                    "src/Support/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandr Chernyaev",
+                    "email": "bliz48rus@gmail.com",
+                    "homepage": "https://tabuna.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Platform for back-office applications, admin panel or CMS your Laravel app.",
+            "homepage": "https://orchid.software",
+            "keywords": [
+                "admin",
+                "cmf",
+                "cms",
+                "extranet",
+                "framework",
+                "laravel",
+                "orchid",
+                "platform",
+                "rad"
+            ],
+            "support": {
+                "docs": "https://orchid.software/en/docs",
+                "email": "bliz48rus@gmail.com",
+                "issues": "https://github.com/orchidsoftware/platform/issues",
+                "source": "https://github.com/orchidsoftware/platform"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/orchid",
+                    "type": "opencollective"
+                }
+            ],
+            "time": "2021-07-25T16:39:36+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.7.5",
             "source": {
@@ -2041,6 +2565,73 @@
                 }
             ],
             "time": "2020-07-20T17:29:33+00:00"
+        },
+        {
+            "name": "propaganistas/laravel-phone",
+            "version": "4.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Propaganistas/Laravel-Phone.git",
+                "reference": "d85ce8af34d39afa39f96176c5ae645f0784e83c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Propaganistas/Laravel-Phone/zipball/d85ce8af34d39afa39f96176c5ae645f0784e83c",
+                "reference": "d85ce8af34d39afa39f96176c5ae645f0784e83c",
+                "shasum": ""
+            },
+            "require": {
+                "giggsey/libphonenumber-for-php": "^7.0|^8.0",
+                "illuminate/contracts": "^8.9",
+                "illuminate/support": "^8.0",
+                "illuminate/validation": "^8.0",
+                "league/iso3166": "^2.0|^3.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "nunomaduro/larastan": "^0.6.11",
+                "orchestra/testbench": "*",
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Propaganistas\\LaravelPhone\\PhoneServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Propaganistas\\LaravelPhone\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Propaganistas",
+                    "email": "Propaganistas@users.noreply.github.com"
+                }
+            ],
+            "description": "Adds phone number functionality to Laravel and Lumen based on Google's libphonenumber API.",
+            "keywords": [
+                "laravel",
+                "libphonenumber",
+                "lumen",
+                "phone",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/Propaganistas/Laravel-Phone/issues",
+                "source": "https://github.com/Propaganistas/Laravel-Phone/tree/4.3.1"
+            },
+            "time": "2021-05-10T07:25:05+00:00"
         },
         {
             "name": "psr/container",
@@ -4941,6 +5532,81 @@
             "time": "2021-07-27T01:56:02+00:00"
         },
         {
+            "name": "tabuna/breadcrumbs",
+            "version": "2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tabuna/breadcrumbs.git",
+                "reference": "c5a6baa0f1142cc9f0166e1bdc10e9754356403c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tabuna/breadcrumbs/zipball/c5a6baa0f1142cc9f0166e1bdc10e9754356403c",
+                "reference": "c5a6baa0f1142cc9f0166e1bdc10e9754356403c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": "^8.16",
+                "opis/closure": "^3.5"
+            },
+            "conflict": {
+                "mockery/mockery": "<1.4.2",
+                "symfony/http-foundation": "<5.1.9"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~6.0",
+                "phpunit/php-code-coverage": "^9.0",
+                "phpunit/phpunit": "^9.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tabuna\\Breadcrumbs\\BreadcrumbsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Breadcrumbs": "Tabuna\\Breadcrumbs\\Breadcrumbs"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tabuna\\Breadcrumbs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandr Chernyaev",
+                    "email": "bliz48rus@gmail.com"
+                },
+                {
+                    "name": "Dwight Watson",
+                    "email": "dwight@studentservices.com.au"
+                },
+                {
+                    "name": "Dave James Miller",
+                    "email": "dave@davejamesmiller.com"
+                }
+            ],
+            "description": "An easy way to add breadcrumbs to your Laravel app.",
+            "support": {
+                "issues": "https://github.com/tabuna/breadcrumbs/issues",
+                "source": "https://github.com/tabuna/breadcrumbs/tree/2.3.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/tabuna/10usd",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-12-11T12:24:49+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.3",
             "source": {
@@ -5146,6 +5812,72 @@
                 }
             ],
             "time": "2020-11-12T00:07:28+00:00"
+        },
+        {
+            "name": "watson/active",
+            "version": "6.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dwightwatson/active.git",
+                "reference": "54ec1fc30b0faf5bd2fe2d4e18e57e0c4c134d7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dwightwatson/active/zipball/54ec1fc30b0faf5bd2fe2d4e18e57e0c4c134d7c",
+                "reference": "54ec1fc30b0faf5bd2fe2d4e18e57e0c4c134d7c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "^8.0",
+                "illuminate/http": "^8.0",
+                "illuminate/routing": "^8.0",
+                "illuminate/support": "^8.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.1",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Watson\\Active\\ActiveServiceProvider"
+                    ],
+                    "aliases": {
+                        "Active": "Watson\\Watson\\Facades\\Active"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Watson\\Active\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dwight Watson",
+                    "email": "dwight@studiousapp.com"
+                }
+            ],
+            "description": "Laravel helper for recognising the current route, controller and action",
+            "keywords": [
+                "active",
+                "laravel",
+                "routing"
+            ],
+            "support": {
+                "issues": "https://github.com/dwightwatson/active/issues",
+                "source": "https://github.com/dwightwatson/active/tree/6.0.1"
+            },
+            "time": "2020-11-30T22:37:43+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -7716,5 +8448,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
